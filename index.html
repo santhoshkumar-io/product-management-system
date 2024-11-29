@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="">
+        <h1>Product Management System</h1>
+        <div class="container">
+            <div class="products-wrap">
+                <div class="form-container">
+                    <form id="product-form" class="form">
+                        <div class="field-wrap">
+                            <label for="id">Product ID:</label>
+                            <input type="number" id="id" required>
+                        </div>
+                        <div class="field-wrap">
+                            <label for="name">Product Name:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="field-wrap">
+                            <label for="price">Price:</label>
+                            <input type="number" id="price" required>
+                        </div>
+
+                        <div class="button-group">
+                            <button type="button" id="add-product">Add Product</button>
+                            <button type="button" id="update-product" style="display: none;">Update Product</button>
+                        </div>
+
+                        <!-- Warning Message Section -->
+                        <div id="warning-message" class="warning-message"></div>
+                    </form>
+                </div>
+
+                <div id="products-section" class="table-section" style="display: none;">
+                    <div class="scroll-table">
+                        <table id="products-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <div class="view-wrap">
+                <button type="button" id="view-products">View Products</button>
+            </div>
+            <div class="actions">
+                <h2>Apply Discount :</h2>
+                <input type="number" id="discount" placeholder="Enter discount (%)">
+                <button id="apply-discount">Apply Discount</button>
+            </div>
+            <div id="discounted-products-section" style="display: none;">
+                <table id="discounted-products-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Original Price</th>
+                            <th>Discounted Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

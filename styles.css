@@ -1,0 +1,218 @@
+/* General Reset and Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h1 {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  color: #333;
+  background-color: #ffffff6c;
+  backdrop-filter: blur(3px);
+  padding: 0.67em;
+  margin: 0;
+  z-index: 100;
+}
+
+h3 {
+  color: #777;
+}
+
+.form,
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.field-wrap {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+input[type='text'],
+input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #55c464;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #46b929;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Table Styling */
+.table-section {
+  margin-left: 120px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #5d93b8;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+tr:hover {
+  background-color: #c4e3f865;
+}
+
+/* Actions Section */
+.actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-direction: row;
+}
+
+.actions button {
+  font-size: 16px;
+}
+
+#discounted-products-section {
+  display: none;
+}
+
+/* Warning Message Styles */
+.warning-message {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 15px;
+  padding: 10px;
+  color: #d9534f;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  display: none;
+}
+.products-wrap {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  max-width: 500px;
+  width: 100%;
+}
+.update-btn,
+.update-btn:hover {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  font-size: 12px;
+  padding: 8px 14px;
+}
+/* Apply Discount Section Styling */
+.discount-input {
+  width: 200px; /* Reduced width */
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Space before the button */
+}
+
+/* Base styling for messages */
+.warning-message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  text-align: center;
+}
+
+/* Error message styling */
+.warning-message.error {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c6cb;
+}
+
+/* Success message styling */
+.warning-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.view-wrap {
+  display: flex;
+  justify-content: center;
+}
+#discount {
+  width: 150px;
+}
+.scroll-table {
+  margin: 10px 0;
+  height: 350px;
+  overflow-y: auto;
+}
